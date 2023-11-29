@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
@@ -13,7 +14,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool primera_tercera;
     [SerializeField] private float turnSmoothTime = 0.1f;
     [SerializeField] private float fallVelocity, gravity;
-    [SerializeField] private bool cinematica;
 
     float turnSmoothVelocity;
 
@@ -24,8 +24,6 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        cinematica = true;
-
         cameraCharacter = GameObject.Find("Camera");
     }
     private void Update()
