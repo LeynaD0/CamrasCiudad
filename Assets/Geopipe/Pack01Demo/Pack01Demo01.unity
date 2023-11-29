@@ -280,8 +280,8 @@ MonoBehaviour:
   cameraCharacter: {fileID: 1712081427}
   primera_tercera: 0
   turnSmoothTime: 0.1
-  fallVelocity: 0
-  gravity: 0
+  fallVelocity: 0.2
+  gravity: 1
 --- !u!1 &223427924
 GameObject:
   m_ObjectHideFlags: 0
